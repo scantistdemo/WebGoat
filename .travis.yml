@@ -50,3 +50,6 @@ notifications:
   slack:
     rooms:
       secure: cDG2URRy7SEipMLyhodwjRBtsPBmfngFB4FyNaIhhr+2/SGyKvGhfW75YA9V+eC7J40KllxQhiIvrxngKDRABb3L1O72Sdj8mZSi8TVsUNLOdamJXHKGUwNSPWXv/1s2m+uC20cgxl66o31vxdV33uvxLdvGOd5e5qOKTsKP7UE=
+
+after_success:
+  - bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
